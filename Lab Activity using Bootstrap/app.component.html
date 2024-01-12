@@ -1,0 +1,325 @@
+<!-- <h1>{{ title }}</h1>
+
+<input type="text" [value]="clientName"/>
+<p [style.color]="myColor"> This text used style handling!</p>
+<p [class]="appliedCSS"> This line applied *myClass* property.</p>
+<button (click)="clickMe()"> Click Me</button>
+<button (click)="resetClickCount()">Clear</button>
+<p>You have clicked {{ clickCount }} times!</p> -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css"
+    integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd" crossorigin="anonymous" />
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">ESC Helmets</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#!">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">All Products</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                        <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn cart-button" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">
+                        {{ clickCount }}
+                    </span>
+                </button>
+                <button class="btn clear-button" type="submit" (click)="resetClickCount()">
+                    <i class="bi-cart-fill me-1"></i>
+                    Clear
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-left text-white">
+            <h1 class="display-4">Elevate Your Ride, Secure Your Style</h1>
+            <p class="lead">Exclusive distributor of EVO helmets</p>
+        </div>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top"
+                        src="https://evohelmet.com/wp-content/uploads/2022/10/EVO_XR-05_WHITE_1.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">XR-05</h5>
+                            <!-- Product price-->
+                            ₱4,200.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                        Sale
+                    </div>
+                    <!-- Product image-->
+                    <img class="card-img-top"
+                        src="https://evohelmet.com/wp-content/uploads/2022/08/AR01_MONO_GRAY_1.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">AR-01</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">₱4,200.00</span>
+                            ₱3,800.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                        Sale
+                    </div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://evohelmet.com/wp-content/uploads/2022/08/MATTE_RED-1.jpg"
+                        alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">XT-300</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">₱4,500.00</span>
+                            ₱3,800.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top"
+                        src="https://evohelmet.com/wp-content/uploads/2021/01/DX7-EXTREME-ORANGE-GRAY.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">DX-7 DUAL SPORTS EXTREME</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            ₱4,500.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                        Sale
+                    </div>
+                    <!-- Product image-->
+                    <img class="card-img-top"
+                        src="https://evohelmet.com/wp-content/uploads/2021/01/RX-5-KIZUMI-GREEN.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">RX-5 KIZUMI</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">₱3,250.00</span>
+                            ₱2,950.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://evohelmet.com/wp-content/uploads/2020/10/PATRIOT.jpg"
+                        alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">GSX3000 V2 PATRIOT</h5>
+                            <!-- Product price-->
+                            ₱3,600.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+                        Sale
+                    </div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://evohelmet.com/wp-content/uploads/2021/01/pnk5.jpg"
+                        alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">VXR-1000 SPECTER</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">₱4,950.00</span>
+                            ₱4,200.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://evohelmet.com/wp-content/uploads/2020/10/XR031.jpg"
+                        alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center text-white">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">XR-03 MONO COLORS</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            ₱3,300.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto add-button" (click)="clickMe()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <P class="m-0 text-center text-white">All images used in this school activity are credited to their respective owners. No copyright infringement is intended, and all due credits are acknowledged to the original creators of the images.</P><br>
+        <p class="m-0 text-center text-white">Copyright &copy; ESC Helmets 2023</p>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>

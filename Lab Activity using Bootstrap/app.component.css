@@ -1,0 +1,149 @@
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.navbar-brand {
+    font-family: "Ethnocentric Rg", sans-serif;
+}
+
+/* Import the Google Fonts if you are using it */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Apply font styles to the header */
+header {
+    font-family: "Ethnocentric Rg", sans-serif;
+    font-style: italic;
+}
+
+/* Increase container size */
+.container {
+    max-width: 1300px;
+    /* Adjust the max-width to your preference */
+    position: relative;
+}
+
+/* Center text vertically within the container */
+.text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    z-index: 2;
+    /* Ensure the text is on top of the pseudo-element */
+}
+
+/* Style the header text */
+.display-4 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: yellow;
+}
+
+header.bg-dark {
+    position: relative;
+    height: 500px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    /* Ensure the pseudo-element doesn't overflow */
+}
+
+header.bg-dark::before {
+    content: "";
+    background-image: url("https://wallpapercave.com/wp/wp9639025.jpg");
+    background-size: cover;
+    /* Adjust to your preference */
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    /* Adjust the opacity (0 to 1) */
+    z-index: 1;
+    /* Place the pseudo-element behind the text */
+}
+
+/* Bootstrap primary color */
+.bg-dark {
+    background-color: #000 !important;
+    /* Adjust the color as needed */
+}
+
+/* Custom styling for the navigation bar */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+/* Cart button styling */
+.cart-button {
+    position: relative;
+    background-color: yellow;
+    color: black;
+    margin: 10px;
+}
+
+.cart-button:hover {
+    background-color: rgb(0, 41, 59);
+    color: white;
+}
+
+.cart-button:hover span {
+    background-color: white;
+    color: black;
+}
+
+/* Add button styling */
+.add-button {
+    position: relative;
+    background-color: yellow;
+    color: black;
+}
+
+.add-button:hover {
+    background-color: rgb(0, 41, 59);
+    color: white;
+}
+
+.add-button:hover span {
+    background-color: white;
+    color: black;
+}
+
+/* Add button styling */
+.clear-button {
+    position: relative;
+    background-color: yellow;
+    color: black;
+    margin: 10px;
+}
+
+.clear-button:hover {
+    background-color: rgb(0, 41, 59);
+    color: white;
+}
+
+.clear-button:hover span {
+    background-color: white;
+    color: black;
+}
