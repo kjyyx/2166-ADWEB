@@ -1,0 +1,37 @@
+/* General styles */
+* {
+    font-family: Lato, sans-serif;
+    padding: 10px;
+  }
+  
+  /* Heading styles */
+  h2 {
+    margin-top: 20px;
+  }
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #ffeaa5;
+  }
+  
+  /* Optional: Style table header text */
+  th {
+    text-align: left;
+  }
+  
+  /* Optional: Style alternating row colors */
+  tr:nth-child(even) {
+    background-color: #f8ff974b;
+  }
+  

@@ -1,0 +1,20 @@
+<h1>List from main</h1>
+<input class="form-control" type="text" name="search" [(ngModel)]="searchText" placeholder="Start Searching for a user...">
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Website</th>
+  </tr>
+
+  <tr *ngFor="let httpuser of httpusers | filters:searchText">
+    <td>{{ httpuser.id }}</td>
+    <td>{{ httpuser.name }}</td>
+    <td>{{ httpuser.username }}</td>
+    <td>{{ httpuser.email }}</td>
+    <td>{{ httpuser.website }}</td>
+  </tr>
+</table>
