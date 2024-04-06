@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <mat-card class="example-card">
+                <mat-card-header class="mathead">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title class="title">Know HAU</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image class="card-image" src="https://i.ytimg.com/vi/GSs00ZcK9Sk/maxresdefault.jpg">
+                <mat-card-content>
+                    <p class="content">
+                        Holy Angel University is a private Catholic university located in Angeles City, Pampanga,
+                        Philippines. It was founded in 1933 by layperson Don Juan Nepomuceno and co-founded by Fr. Pedro
+                        Paulo Santos. The university offers a wide range of academic programs across various
+                        disciplines, including business, education, engineering, arts and sciences, hospitality
+                        management, and more. Holy Angel University is known for its strong emphasis on holistic
+                        education, character formation, and community engagement. It has a vibrant campus life with
+                        cultural events, sports activities, and student organizations contributing to a well-rounded
+                        educational experience.
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-5">
+                <form class="custom-form" [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+                    <h2 class="h2">Add Book</h2>
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Book Title</mat-label>
+                            <input matInput placeholder="Ex. Harry Potter" formControlName="title" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Price</mat-label>
+                            <input matInput placeholder="" formControlName="price" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Description</mat-label>
+                            <input matInput placeholder="" formControlName="description" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="matbutton">
+                        <mat-chip-listbox aria-label="Book type" formControlName="book_type">
+                            <mat-chip-option>Local Author</mat-chip-option>
+                            <mat-chip-option>Foreign Author</mat-chip-option>
+                        </mat-chip-listbox>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="custom-button" type="submit" matRipple>Add Book</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

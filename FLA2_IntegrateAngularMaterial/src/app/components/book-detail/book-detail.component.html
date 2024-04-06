@@ -1,0 +1,42 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="mb-5">
+                <form class="custom-form" [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+                    <h2 class="h2">Edit Book Details</h2>
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Book Title</mat-label>
+                            <input matInput placeholder="Ex. Harry Potter" formControlName="title" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Price</mat-label>
+                            <input matInput placeholder="" formControlName="price" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="mb-2">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter Description</mat-label>
+                            <input matInput placeholder="" formControlName="description" required>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="matbutton">
+                        <mat-chip-listbox aria-label="Book type" formControlName="book_type">
+                            <mat-chip-option>Local Author</mat-chip-option>
+                            <mat-chip-option>Foreign Author</mat-chip-option>
+                        </mat-chip-listbox>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="custom-button" type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

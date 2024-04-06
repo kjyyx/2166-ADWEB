@@ -1,0 +1,49 @@
+<div class="container">
+    <h2 class="h2">Books List</h2>
+    <div class="table-responsive">
+        <mat-table [dataSource]="sortedData" class="mat-elevation-z8" matSort (matSortChange)="sortData($event)">
+            <!-- <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+                <mat-cell *matCellDef="let book"> {{book._id}} </mat-cell>
+            </ng-container> -->
+
+            <ng-container matColumnDef="title">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Title </mat-header-cell>
+                <mat-cell *matCellDef="let book"> {{book.title}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
+                <mat-cell *matCellDef="let book"> {{book.price}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="description">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+                <mat-cell *matCellDef="let book"> {{book.description}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="type">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Type </mat-header-cell>
+                <mat-cell *matCellDef="let book"> {{book.book_type}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+                <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+                <mat-cell *matCellDef="let book">
+                    <div class="button-container">
+                        <button mat-button class="edit" routerLink="/edit-book/{{book._id}}" matRipple> Edit </button>
+                        <button mat-button class="delete" (click)="delete(book._id)" matRipple> Delete </button>                        
+                    </div>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+        <div class="paginator-container">
+            <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" [length]="Books.length"
+                (page)="paginateBooks($event)">
+            </mat-paginator>
+        </div>
+    </div>
+</div>

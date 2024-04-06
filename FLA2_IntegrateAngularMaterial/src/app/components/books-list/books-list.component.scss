@@ -1,0 +1,77 @@
+.container {
+    background-color: rgba(240, 240, 240, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    margin-top: 6rem; /* Reduced margin for better visibility */
+    text-align: center; /* Center align text */
+}
+
+/* Heading styles */
+.h2 {
+    font-size: 40px; /* Increase font size */
+    margin-bottom: 20px; /* Add margin bottom */
+    font-weight: bold;
+    color: wheat;
+    margin: auto 0;
+    text-align: center;
+}
+
+/* Table styles */
+.table-responsive {
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Separate background color for the table */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.button-container button {
+    width: 120px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold; /* Make button text bold */
+}
+
+.button-container button.edit {
+    background-color: #007bff; /* Blue background for 'Edit' button */
+    color: white; /* White text color for 'Edit' button */
+}
+
+.button-container button.delete {
+    background-color: #dc3545; /* Red background for 'Delete' button */
+    color: white; /* White text color for 'Delete' button */
+}
+
+.button-container button:hover {
+    opacity: 0.9;
+}
+
+.paginator-container {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mat-paginator {
+    border-radius: 5px;
+}
+
+.mat-paginator-page-size-label {
+    color: #fff; /* Change the text color to white */
+}
+
+.mat-paginator-range-label {
+    color: #fff; /* Change the text color to white */
+}
+

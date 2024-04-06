@@ -1,0 +1,68 @@
+/* styles.css or styles.scss */
+
+.custom-form {
+    background-color: rgba(240, 240, 240, 0.1);
+    /* Set the background color of the form with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    /* Apply a blur effect to the background */
+    margin-top: 4rem;
+}
+
+.custom-form .mat-form-field {
+    width: 100%;
+}
+
+.custom-form .full-width {
+    width: 100%;
+}
+
+.custom-form .mat-label {
+    color: #333;
+    /* Set the text color of the labels */
+}
+
+.custom-form .mat-input-element {
+    background-color: #fff;
+    /* Set the background color of the input fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.custom-form .mat-input-element:focus {
+    border-color: #007bff;
+    /* Set the border color of focused input fields */
+}
+
+.custom-button {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.custom-button:hover {
+    background-color: #ff0095;
+    /* Set the background color of the button on hover */
+}
+
+.h2 {
+    font-size: 40px; /* Increase font size */
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: wheat;
+    text-align: center;
+}
+
+.matbutton, .button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    font-size: 16px;
+}
+

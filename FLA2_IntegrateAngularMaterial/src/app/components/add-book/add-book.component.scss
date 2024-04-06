@@ -1,0 +1,108 @@
+/* styles.css or styles.scss */
+
+.custom-form {
+    background-color: rgba(240, 240, 240, 0.1);
+    /* Set the background color of the form with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    /* Apply a blur effect to the background */
+    margin-top: 4rem;
+}
+
+.custom-form .mat-form-field {
+    width: 100%;
+}
+
+.custom-form .full-width {
+    width: 100%;
+}
+
+.custom-form .mat-label {
+    color: #333;
+    /* Set the text color of the labels */
+}
+
+.custom-form .mat-input-element {
+    background-color: #fff;
+    /* Set the background color of the input fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.custom-form .mat-input-element:focus {
+    border-color: #007bff;
+    /* Set the border color of focused input fields */
+}
+
+.custom-button {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.custom-button:hover {
+    background-color: #ff0095;
+    /* Set the background color of the button on hover */
+}
+
+.h2 {
+    font-size: 40px;
+    /* Increase font size */
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: wheat;
+    text-align: center;
+}
+
+.matbutton,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    font-size: 16px;
+}
+
+.example-card {
+    background-color: rgba(240, 240, 240, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.card-image {
+    width: 80%; /* Resize the image to fit the card */
+    height: 250px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 8px; /* Add border radius to the image */
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+.content {
+    font-size: 14px; /* Set font size for the content */
+    color: #ffffff; /* Set font color for the content */
+    line-height: 1.5; /* Set line height */
+    padding: 20px 50px;
+}
+
+.mathead{
+    display: block;
+    padding: 0;
+    margin: 0;
+}

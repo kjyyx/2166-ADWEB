@@ -1,0 +1,40 @@
+/*
+*/
+
+.active {
+    background: 'light-gray'
+}
+
+/* styles.css */
+
+/* Custom colors */
+.bg-maroon-500 {
+    background-color: #800000;
+    /* Maroon color */
+}
+
+.text-mustard {
+    color: wheat
+    /* Mustard color */
+}
+
+.text-mustard-dark:hover {
+    color: #ffffff;
+    /* Darker Mustard color on hover */
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay with 50% opacity */
+}
