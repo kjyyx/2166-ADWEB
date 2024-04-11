@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="container2">
+    <span class="navbar-brand">Literary Oasis</span>
+  </div>
+</nav>
+
+<div class="blur-container">
+  <div class="container">
+    <h1 class="heading">Add Book </h1>
+
+    <div class="input-group">
+      <input id="newBook" class="input-field" placeholder="Title">
+      <input id="newDesc" class="input-field" placeholder="Description">
+      <input id="newPrice" class="input-field" placeholder="Book Price">
+      <button class="add-button" (click)="addBook()">Add Book</button>
+    </div>
+
+    <div class="book-list">
+      <div class="book-item" *ngFor="let book of books">
+        <div class="book-details">
+          <p><strong>Title:</strong> {{ book.title }}</p>
+          <p><strong>Description:</strong> {{ book.description }}</p>
+          <p><strong>Price:</strong> {{ book.price }}</p>
+        </div>
+        <button class="delete-button" (click)="deleteBook(book.id)">Delete Book</button>
+      </div>
+    </div>
+  </div>
+</div>

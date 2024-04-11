@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #750000;
+    padding: 20px 0;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* .blur-container {
+    background-color: rgb(163, 163, 163, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    position: relative;
+  } */
+  
+  .container2 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(163, 163, 163, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-list {
+    margin-top: 20px;
+  }
+  
+  .book-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .book-details {
+    flex: 1;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size: 18px;
+  }
+  
+  .delete-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
